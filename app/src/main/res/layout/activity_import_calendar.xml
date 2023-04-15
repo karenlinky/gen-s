@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/importCalendar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.activities.ImportCalendarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnImportCalendar"
+            android:layout_width="262dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#4472AF"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Import .ics file"
+            android:textAllCaps="false"
+            app:cornerRadius="5dp" />
+
+        <TextView
+            android:id="@+id/importCalendarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Import external calendars with this file. Note: notifications will not be imported and will need to be dealt with manually. Calendars with conflicts are also unable to be imported if there are conflicts."
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</RelativeLayout>
